@@ -7,6 +7,7 @@
           :key="item.name"
           :href="item.href"
           class="text-gray-400 hover:text-gray-500"
+          target="_blank"
         >
           <span class="sr-only">{{ item.name }}</span>
           <component
@@ -28,27 +29,5 @@
 </template>
 
 <script setup>
-import {
-  IconBrandFacebook,
-  IconBrandInstagram,
-  IconBrandTwitter,
-} from "@tabler/icons-vue";
-
-const navigation = [
-  {
-    name: "Facebook",
-    href: "#",
-    icon: IconBrandFacebook,
-  },
-  {
-    name: "Instagram",
-    href: "#",
-    icon: IconBrandInstagram,
-  },
-  {
-    name: "Twitter",
-    href: "#",
-    icon: IconBrandTwitter,
-  },
-];
+import { navigation } from "@/lib/constants/footer_navigation";
 </script>
