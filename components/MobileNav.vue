@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { DisclosurePanel, DisclosureButton } from "@headlessui/vue";
-import { nav } from "@/lib/constants";
+import { nav } from "@/lib/constants/navbar";
 const NuxtLink = resolveComponent("nuxt-link");
 </script>
 
