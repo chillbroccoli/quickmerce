@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Disclosure } from "@headlessui/vue";
-import { nav } from "~/lib/constants";
+import { nav } from "~/lib/constants/navbar";
 </script>
 
 <template>
