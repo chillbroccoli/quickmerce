@@ -1,4 +1,4 @@
-export const features = [
+export const FEATURES = [
   {
     name: "Adventure-ready",
     description:
