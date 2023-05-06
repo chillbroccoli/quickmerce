@@ -1,9 +1,13 @@
+<script setup>
+import { FOOTER_NAV } from "@/lib/constants/footer_navigation";
+</script>
+
 <template>
   <footer>
     <div class="md:flex md:items-center md:justify-between">
       <div class="flex justify-center space-x-6 md:order-2">
         <a
-          v-for="item in navigation"
+          v-for="item in FOOTER_NAV"
           :key="item.name"
           :href="item.href"
           class="text-gray-400 hover:text-gray-500"
@@ -27,7 +31,3 @@
     </div>
   </footer>
 </template>
-
-<script setup>
-import { navigation } from "@/lib/constants/footer_navigation";
-</script>
