@@ -4,7 +4,7 @@ import {
   IconShoppingBag,
 } from "@tabler/icons-vue";
 
-export const incentives = [
+export const INCENTIVES = [
   {
     name: "Free Shipping",
     description:
