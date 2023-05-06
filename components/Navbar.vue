@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Disclosure } from "@headlessui/vue";
-import { nav } from "~/lib/constants/navbar";
+import { NAV } from "~/lib/constants/navbar";
 </script>
 
 <template>
@@ -12,17 +12,18 @@ import { nav } from "~/lib/constants/navbar";
             <img
               class="w-auto h-8"
               src="https://tailwindui.com/img/logos/mark.svg?color=orange&shade=600"
-              alt="Your Company"
+              alt="Quickmerce"
             />
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-            <template v-for="item in nav" :key="item.id">
+            <template v-for="item in NAV" :key="item.id">
               <NuxtLink
                 :to="item.href"
                 class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:border-orange-300 hover:text-gray-700"
                 active-class="inline-flex items-center px-1 pt-1 text-sm font-medium !text-orange-600 border-b-2 !border-orange-500"
-                >{{ item.name }}</NuxtLink
               >
+                {{ item.name }}
+              </NuxtLink>
             </template>
           </div>
         </div>
