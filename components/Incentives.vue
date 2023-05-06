@@ -1,5 +1,5 @@
-<script setup>
-import { incentives } from "~/lib/constants/incentives";
+<script setup lang="ts">
+import { INCENTIVES } from "~/lib/constants/incentives";
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import { incentives } from "~/lib/constants/incentives";
       class="grid max-w-2xl grid-cols-1 px-4 mx-auto gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3"
     >
       <div
-        v-for="incentive in incentives"
+        v-for="incentive in INCENTIVES"
         :key="incentive.name"
         class="text-center sm:flex sm:text-left lg:block lg:text-center"
       >
