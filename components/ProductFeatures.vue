@@ -1,3 +1,7 @@
+<script setup>
+import { FEATURES } from "@/lib/constants/product_features";
+</script>
+
 <template>
   <div>
     <div class="max-w-2xl px-4 mx-auto lg:max-w-none">
@@ -18,7 +22,7 @@
         class="pt-10 mt-10 space-y-16 border-t border-gray-200 sm:mt-16 sm:pt-16"
       >
         <div
-          v-for="feature in features"
+          v-for="feature in FEATURES"
           :key="feature.name"
           class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8"
         >
@@ -46,7 +50,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import { features } from "@/lib/constants/product_features";
-</script>
