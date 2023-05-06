@@ -4,7 +4,7 @@ import {
   IconBrandTwitter,
 } from "@tabler/icons-vue";
 
-export const navigation = [
+export const FOOTER_NAV = [
   {
     name: "Facebook",
     href: "#",
