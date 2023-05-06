@@ -1,5 +1,5 @@
 import PRODUCTS from "@/lib/data/data.json";
-import { Product } from "~/lib/types/product";
+import type { Product } from "~/lib/types/product";
 
 export default defineEventHandler((event) => {
   const query = getQuery(event) as { start?: number; limit?: number };
